@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Tusker 6700 Bold";
+    src: url("/fonts/tusker-grotesk-6700-bold.ttf") format('truetype'),
+            url("/fonts/tusker-grotesk-6700-bold-webfont.woff") format('woff'),
+            url("/fonts/tusker-grotesk-6700-bold-webfont.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+   background-color: #FDF9F2
+}
+
+h1{
+    font-family: "Tusker 6700 Bold";
+    font-size: 10rem
+}
