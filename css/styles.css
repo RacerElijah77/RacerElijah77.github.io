@@ -1,17 +1,59 @@
 @font-face {
-    font-family: "Tusker 6700 Bold";
-    src: url("/fonts/tusker-grotesk-6700-bold.ttf") format('truetype'),
-            url("/fonts/tusker-grotesk-6700-bold-webfont.woff") format('woff'),
-            url("/fonts/tusker-grotesk-6700-bold-webfont.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Tusker 6700 Bold";
+  src: url("/fonts/tusker-grotesk-6700-bold.ttf") format("truetype"),
+    url("/fonts/tusker-grotesk-6700-bold-webfont.woff") format("woff"),
+    url("/fonts/tusker-grotesk-6700-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{
-   background-color: #FDF9F2
+
+body {
+  background-color: #fdf9f2;
 }
 
-h1{
-    font-family: "Tusker 6700 Bold";
-    font-size: 10rem
+/* Navigation Bar */
+.navbar{
+  font-family: 'Arimo';
+  padding: 25px;
+}
+
+.navbar-brand{
+  font-weight: 900;
+  color: #2F2D31;
+}
+
+#social-icons, #social-icons-last{
+  font-size: 1.4rem;
+  color: #2F2D31;
+}
+
+#social-icons{
+  padding-right: 20px;
+}
+
+
+
+/* Main Title page */
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2F2D31;
+
+}
+
+.hero-title {
+  font-family: "Tusker 6700 Bold";
+  font-size: 10rem;
+  text-shadow: 20px 15px#FF8931;
+}
+
+.hero-desc {
+  font-family: 'Arimo';
+  font-size: 4rem;
+  padding: 2% 20%;
 }
