@@ -1,55 +1,73 @@
+
+/* Import custom local font */
 @font-face {
-  font-family: "Tusker 6700 Bold";
-  src: url("/fonts/tusker-grotesk-6700-bold.ttf") format("truetype"),
-    url("/fonts/tusker-grotesk-6700-bold-webfont.woff") format("woff"),
-    url("/fonts/tusker-grotesk-6700-bold-webfont.woff2") format("woff2");
+  font-family: 'Tusker 6700 Bold';
+  src: url('/fonts/tusker-grotesk-6700-bold.ttf') format('truetype'),
+    url('/fonts/tusker-grotesk-6700-bold-webfont.woff') format('woff'),
+    url('/fonts/tusker-grotesk-6700-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
-
 
 body {
   background-color: #fdf9f2;
 }
 
 /* Navigation Bar */
-.navbar{
+.navbar {
   font-family: 'Arimo';
   padding: 25px;
+  --bs-navbar-hover-color: #2f2d31;
 }
 
-.navbar-brand{
+.navbar-brand {
   font-weight: 900;
-  color: #2F2D31;
+  color: #2f2d31;
+  --bs-navbar-brand-hover-color: #ff8931;
+  transition: color 0.15s ease-in-out;
 }
 
-#social-icons, #social-icons-last{
+/* Social Media Icons Navbar */
+
+#social-icons,
+#social-icons-last {
   font-size: 1.4rem;
-  color: #2F2D31;
+  color: #2f2d31;
 }
 
-#social-icons{
+#social-icons {
   padding-right: 20px;
 }
 
+#social-icons:hover,
+#social-icons-last:hover {
+  color: #ff8931;
+}
 
+/* Main Title Portion */
 
-/* Main Title page */
+.avd-cpy {
+  background-color: red;
+}
 
 .hero-text {
+  user-select: none;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #2F2D31;
-
+  color: #2f2d31;
 }
 
 .hero-title {
-  font-family: "Tusker 6700 Bold";
+  font-family: 'Tusker 6700 Bold';
   font-size: 10rem;
-  text-shadow: 20px 15px#FF8931;
+  text-shadow: 10px 10px#f5f2f2, 20px 20px#FF8931;
+}
+
+.temp:hover {
+  /* transform: scale(1.5); */
 }
 
 .hero-desc {
