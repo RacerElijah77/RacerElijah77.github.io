@@ -1,4 +1,3 @@
-
 /* Import custom local font */
 @font-face {
   font-family: 'Tusker 6700 Bold';
@@ -11,6 +10,11 @@
 
 body {
   background-color: #fdf9f2;
+  font-family: 'Arimo';
+}
+
+h2{
+  font-size: 2.3rem;
 }
 
 /* Navigation Bar */
@@ -46,8 +50,9 @@ body {
 
 /* Main Title Portion */
 
-.avd-cpy {
-  background-color: red;
+#home {
+  position: relative;
+  height: 100vh;
 }
 
 .hero-text {
@@ -62,16 +67,58 @@ body {
 
 .hero-title {
   font-family: 'Tusker 6700 Bold';
-  font-size: 10rem;
-  text-shadow: 10px 10px#f5f2f2, 20px 20px#FF8931;
-}
-
-.temp:hover {
-  /* transform: scale(1.5); */
+  text-shadow: 0.625rem 0.625rem #f5f2f2, 1.25rem 1.25rem #ff8931;
+  font-size: 4rem;
+  font-size: calc(4rem + 3.5vw);
+  position: relative;
+  bottom: 100px;
 }
 
 .hero-desc {
   font-family: 'Arimo';
-  font-size: 4rem;
-  padding: 2% 20%;
+  font-size: 3rem;
+  padding: 20px;
+  display: inline-block;
+  transition: color 0.15s ease-in-out;
+  position: relative;
+  bottom: 100px;
+}
+
+@media (max-width: 652px) {
+  .hero-title {
+    line-height: 8rem;
+  }
+
+  .hero-desc{
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+@media (min-width: 779px) {
+  .hero-desc {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero-desc {
+    font-size: calc(1rem + 2vw);
+  }
+}
+
+.hero-desc:hover {
+  color: #ff8931;
+}
+
+/* About Me Section */
+
+.ej-prof {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 100%; */
+}
+
+.about-para {
+  margin-bottom: 7%;
 }
