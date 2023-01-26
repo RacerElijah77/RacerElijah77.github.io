@@ -13,8 +13,13 @@ body {
   font-family: 'Arimo';
 }
 
-h2{
+h2 {
   font-size: 2.3rem;
+}
+
+/* Subject to change; MUST 6implement responsive font size on smaller devices */
+p {
+  font-size: 1.1rem;
 }
 
 /* Navigation Bar */
@@ -24,11 +29,23 @@ h2{
   --bs-navbar-hover-color: #2f2d31;
 }
 
+.bgcolor-trans {
+  transition: 0.22s ease-in;
+}
+
 .navbar-brand {
   font-weight: 900;
   color: #2f2d31;
   --bs-navbar-brand-hover-color: #ff8931;
   transition: color 0.15s ease-in-out;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 /* Social Media Icons Navbar */
@@ -71,7 +88,7 @@ h2{
   font-size: 4rem;
   font-size: calc(4rem + 3.5vw);
   position: relative;
-  bottom: 100px;
+  bottom: 40px;
 }
 
 .hero-desc {
@@ -81,7 +98,7 @@ h2{
   display: inline-block;
   transition: color 0.15s ease-in-out;
   position: relative;
-  bottom: 100px;
+  bottom: 40px;
 }
 
 @media (max-width: 652px) {
@@ -89,7 +106,7 @@ h2{
     line-height: 8rem;
   }
 
-  .hero-desc{
+  .hero-desc {
     font-size: calc(1.5rem + 2vw);
   }
 }
