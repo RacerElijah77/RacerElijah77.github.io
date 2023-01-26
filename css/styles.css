@@ -1,17 +1,141 @@
+/* Import custom local font */
 @font-face {
-    font-family: "Tusker 6700 Bold";
-    src: url("/fonts/tusker-grotesk-6700-bold.ttf") format('truetype'),
-            url("/fonts/tusker-grotesk-6700-bold-webfont.woff") format('woff'),
-            url("/fonts/tusker-grotesk-6700-bold-webfont.woff2") format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Tusker 6700 Bold';
+  src: url('/fonts/tusker-grotesk-6700-bold.ttf') format('truetype'),
+    url('/fonts/tusker-grotesk-6700-bold-webfont.woff') format('woff'),
+    url('/fonts/tusker-grotesk-6700-bold-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-body{
-   background-color: #FDF9F2
+body {
+  background-color: #fdf9f2;
+  font-family: 'Arimo';
 }
 
-h1{
-    font-family: "Tusker 6700 Bold";
-    font-size: 10rem
+h2 {
+  font-size: 2.3rem;
+}
+
+/* Subject to change; MUST 6implement responsive font size on smaller devices */
+p {
+  font-size: 1.1rem;
+}
+
+/* Navigation Bar */
+.navbar {
+  font-family: 'Arimo';
+  padding: 25px;
+  --bs-navbar-hover-color: #2f2d31;
+}
+
+.bgcolor-trans {
+  transition: 0.22s ease-in;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  color: #2f2d31;
+  --bs-navbar-brand-hover-color: #ff8931;
+  transition: color 0.15s ease-in-out;
+}
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Social Media Icons Navbar */
+
+#social-icons,
+#social-icons-last {
+  font-size: 1.4rem;
+  color: #2f2d31;
+}
+
+#social-icons {
+  padding-right: 20px;
+}
+
+#social-icons:hover,
+#social-icons-last:hover {
+  color: #ff8931;
+}
+
+/* Main Title Portion */
+
+#home {
+  position: relative;
+  height: 100vh;
+}
+
+.hero-text {
+  user-select: none;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2f2d31;
+}
+
+.hero-title {
+  font-family: 'Tusker 6700 Bold';
+  text-shadow: 0.625rem 0.625rem #f5f2f2, 1.25rem 1.25rem #ff8931;
+  font-size: 4rem;
+  font-size: calc(4rem + 3.5vw);
+  position: relative;
+  bottom: 40px;
+}
+
+.hero-desc {
+  font-family: 'Arimo';
+  font-size: 3rem;
+  padding: 20px;
+  display: inline-block;
+  transition: color 0.15s ease-in-out;
+  position: relative;
+  bottom: 40px;
+}
+
+@media (max-width: 652px) {
+  .hero-title {
+    line-height: 8rem;
+  }
+
+  .hero-desc {
+    font-size: calc(1.5rem + 2vw);
+  }
+}
+
+@media (min-width: 779px) {
+  .hero-desc {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero-desc {
+    font-size: calc(1rem + 2vw);
+  }
+}
+
+.hero-desc:hover {
+  color: #ff8931;
+}
+
+/* About Me Section */
+
+.ej-prof {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* border-radius: 100%; */
+}
+
+.about-para {
+  margin-bottom: 7%;
 }
