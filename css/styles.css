@@ -40,7 +40,6 @@ p {
   transition: color 0.15s ease-in-out;
 }
 
-
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
@@ -139,3 +138,8 @@ p {
 .about-para {
   margin-bottom: 7%;
 }
+
+.sub_head {
+  margin-top: 4%;
+}
+

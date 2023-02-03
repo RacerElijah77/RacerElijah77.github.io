@@ -49,13 +49,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#about_seperator">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact-info">Contact</a>
             </li>
           </ul>
 
@@ -99,6 +99,7 @@
     </nav>
 
     <!-- Home Section -->
+
     <section id="home">
       <!-- Title Portion (in Home Section) -->
       <div class="row">
@@ -110,38 +111,64 @@
     </section>
 
     <!-- About Me -->
+    <div id = "about_seperator" style="border: 2px solid red; position: relative; top: -75px"></div>
+      <section id="about">
+        <div class="container mt-4 pt-4">
+          <h2 class="text-center">- About Me -</h2>
+          <div class="row test mt-5">
+            <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
+              <img class="ej-prof" src="/images/profile-img-blob.png" alt="elijah-gasataya-img" />
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
+              <p class="about-para">
+                My name is Elijah Gasataya, but you can call me EJ for short! I am currently an undergraduate student at
+                The College of New Jersey (TCNJ) majoring in computer science. Not too long ago I found great interest
+                in front-end web development because I always loved to somehow link my creative ability with the
+                programming skills and concepts I've learned throughout my academia.
+              </p>
 
-    <section id="about">
-      <div class="container mt-4 pt-4">
-        <h2 class="text-center">- About Me -</h2>
-        <div class="row test mt-5">
-          <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
-            <img class="ej-prof" src="/images/profile-img-blob.png" alt="elijah-gasataya-img" />
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 mx-auto">
-            <p class="about-para">
-              HERE GOES EJ EDUCATION ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Eget nullam non nisi est.
-              Posuere morbi leo urna molestie at. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies
-              leo.
-            </p>
-
-            <p class="about-para">
-              HERE GOES EJ Hobbies ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris. Eget nullam non nisi est.
-              Posuere morbi leo urna molestie at. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies
-              leo.
-            </p>
+              <p class="about-para">
+                In relation to my creative ability, I also love to produce music. My alias, EJGSTY has been with me
+                since 2016- my freshman year of high school. I also love to play video games during my free time (like
+                there is such a thing nowadays)! I play games from a wide array of genres, such as Battlefield, Dying
+                Light, and Assassin's Creed.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- Projects -->
+    <div id = "projects_seperator" style="border: 2px solid red; position: relative; top: -75px"></div>
     <section id="projects">
       <div class="container mt-4 pt-4">
         <h2 class="text-center">- Projects -</h2>
-        <p>Here are some projects that I have worked on:</p>
+        <h5 class="fw-bolder fst-italic sub_head">
+          Personal Portfolio : June 2022 - present
+          <a href="https://github.com/RacerElijah77/PortfolioSite"> (GitHub)</a>
+        </h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          The site you are looking at right now! This is where it all started where my desire to learn more about web
+          development technologies grew. Made entirely using HTML5, CSS3, and Bootstrap 5.
+          <span style="text-decoration: underline">I am still working to improve this site!</span>
+        </li>
+        <h5 class="fw-bolder fst-italic sub_head">Amazon Web Scraper : November 2022</h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          One of the group projects during my undergraduate studies. Written in Python, it is a script that analyzes the
+          reviews and ratings for a particular product listed on Amazon with added functionality to determine if the
+          ratings of the product are biased or not based on each comment left by each reviewer. Scraping done through
+          Python's Selenium page automation tool and Beautiful Soup 4, an HTML parser.
+        </li>
+        <h5 class="fw-bolder fst-italic sub_head">
+          Collaboration Spotify Network: April 2022
+          <a href="https://github.com/RacerElijah77/collaboration_spotify_network"> (GitHub) </a>
+        </h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          This project was made with my friends during an annual hackathon at TCNJ called HackTCNJ. This was my first
+          ever hackathon! It is a web application that allows the user to search for a specified artist using the
+          Spotify API, alongside with the AnyChart API to display some of the collaborations the specified artist made.
+          I primarily focused on the color scheme of the app.
+        </li>
       </div>
     </section>
 
@@ -149,7 +176,20 @@
     <section id="work-exp">
       <div class="container mt-4 pt-4">
         <h2 class="text-center">- Work Experience -</h2>
-        <p>Insert Work Experience Here</p>
+        <h5 class="fw-bolder fst-italic sub_head">Drop-In CS Tutor : September 2022 - present</h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          One of the group projects during my undergraduate studies. Written in Python, it is a script that analyzes the
+          reviews and ratings for a particular product listed on Amazon with added functionality to determine if the
+          ratings of the product are biased or not based on each comment left by each reviewer. Scraping done through
+          Python's Selenium page automation tool and Beautiful Soup 4, an HTML parser.
+        </li>
+        <h5 class="fw-bolder fst-italic sub_head">One-on-One Java Tutor : May 2022 - August 2022</h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          One of the group projects during my undergraduate studies. Written in Python, it is a script that analyzes the
+          reviews and ratings for a particular product listed on Amazon with added functionality to determine if the
+          ratings of the product are biased or not based on each comment left by each reviewer. Scraping done through
+          Python's Selenium page automation tool and Beautiful Soup 4, an HTML parser.
+        </li>
       </div>
     </section>
 
@@ -157,7 +197,13 @@
     <section id="contact-info">
       <div class="container mt-4 pt-4">
         <h2 class="text-center">- Contact -</h2>
-        <p>Insert Contact Information Here</p>
+        <h5 class="fw-bolder fst-italic sub_head">Amazon Web Scraper : Nov 2022</h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          One of the group projects during my undergraduate studies. Written in Python, it is a script that analyzes the
+          reviews and ratings for a particular product listed on Amazon with added functionality to determine if the
+          ratings of the product are biased or not based on each comment left by each reviewer. Scraping done through
+          Python's Selenium page automation tool and Beautiful Soup 4, an HTML parser.
+        </li>
       </div>
     </section>
 
