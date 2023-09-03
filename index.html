@@ -25,8 +25,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
     <script src="https://kit.fontawesome.com/b0ddb330de.js" crossorigin="anonymous"></script>
+
+    <!-- Scripts for email service through the from (EmailJS) -->
+    <script src = "js/smtp_script.js"> </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xpTgAPs9MYezOP64p");
+      })()
+    </script>
   </head>
 
   <body>
@@ -130,8 +138,8 @@
             <p class="about-para">
               In relation to my creative ability, I also love to produce music. My alias, EJGSTY has been with me since
               2016- my freshman year of high school. I also love to play video games during my free time (like there is
-              such a thing nowadays)! I play games from a wide array of genres, such as Battlefield, Dying Light, and
-              Assassin's Creed.
+              such a thing nowadays)! I play games from a wide array of genres, from first-person shooters to open world
+              games!
             </p>
           </div>
         </div>
@@ -145,7 +153,7 @@
         <h2 class="text-center">- Projects -</h2>
         <h5 class="fw-bolder fst-italic sub_head">
           Personal Portfolio : June 2022 - present
-          <a href="https://github.com/RacerElijah77/PortfolioSite"> (GitHub)</a>
+          <a target="_blank" href="https://github.com/RacerElijah77/PortfolioSite"> (GitHub)</a>
         </h5>
         <li class="bp1" style="list-style-position: inside; vertical-align: middle">
           The site you are looking at right now! This is where it all started where my desire to learn more about web
@@ -161,7 +169,7 @@
         </li>
         <h5 class="fw-bolder fst-italic sub_head">
           Collaboration Spotify Network: April 2022
-          <a href="https://github.com/RacerElijah77/collaboration_spotify_network"> (GitHub) </a>
+          <a target="_blank" href="https://github.com/RacerElijah77/collaboration_spotify_network"> (GitHub) </a>
         </h5>
         <li class="bp1" style="list-style-position: inside; vertical-align: middle">
           This project was made with my friends during an annual hackathon at TCNJ called HackTCNJ. This was my first
@@ -173,7 +181,7 @@
     </section>
 
     <!-- Work -->
-
+    <div id="contacts_seperator" style="position: relative; top: -75px"></div>
     <section id="work-exp">
       <div class="container mt-4 pt-4">
         <h2 class="text-center">- Work Experience -</h2>
@@ -195,21 +203,28 @@
     </section>
 
     <!-- Contact Info -->
-    <div id = "contact_seperator" style="position: relative; top: -75px"></div>
+    <div id="contact_seperator" style="position: relative; top: -75px"></div>
     <section id="contact-info">
-      <div class="container mt-4 pt-4">
-        <h2 class="text-center">- Contact -</h2>
-        <h5 class="fw-bolder fst-italic sub_head">Amazon Web Scraper : Nov 2022</h5>
-        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
-          One of the group projects during my undergraduate studies. Written in Python, it is a script that analyzes the
-          reviews and ratings for a particular product listed on Amazon with added functionality to determine if the
-          ratings of the product are biased or not based on each comment left by each reviewer. Scraping done through
-          Python's Selenium page automation tool and Beautiful Soup 4, an HTML parser.
-        </li>
+      <h2 class="text-center">- Contact -</h2>
+      <div class="container mt-4 pt-4 text-center contact_box shadow">
+        <h5 style="color: #fdf9f2;" class="text-center">Please feel free to contact me if you have any questions!</h5>
+          <div class="form-group ">
+            <input type="text" id = "name" class="form-control cont-elem" placeholder="Name" />
+            <input type="email" id = "email" class="form-control cont-elem" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <label style="color: #fdf9f2;">Message:</label>
+            <textarea id = "message" class="form-control cont-elem" rows="4"></textarea>
+          </div>
+            <button class="btn btn-primary" onclick="sendMail()">Submit</button>
+        </form>
       </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <!-- Footer for copyright text -->
+    <div class = "copyright_footer text-center">
+      <footer>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Elijah Gasataya. All Rights Reserved.</small></footer>
+    </div>
 
     <!-- Bootstrap JavaScript Library -->
     <script
@@ -220,8 +235,7 @@
 
     <!-- JQuery Library from Google Developers site -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
     <!-- JQuery action for Navigation Bar scroll transition -->
-    <script src="js/script.js"></script>
+    <script src="js/navbar_script.js"></script>
   </body>
 </html>
