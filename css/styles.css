@@ -90,6 +90,15 @@ p {
   bottom: 40px;
 }
 
+#bg_vid{
+  opacity: 30%;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+}
+
 .hero-desc {
   font-family: 'Arimo';
   font-size: 3rem;
@@ -98,6 +107,26 @@ p {
   transition: color 0.35s ease-in-out;
   position: relative;
   bottom: 40px;
+}
+
+@media (min-width: 1732px){
+  #bg_vid{
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+  }
+}
+
+@media (max-height: 652px){
+  #bg_vid{
+    -moz-transform:scale(3);
+    -webkit-transform:scale(3);
+    -o-transform:scale(3);
+    -ms-transform:scale(3);
+    transform:scale(3);
+  }
 }
 
 @media (max-width: 652px) {
