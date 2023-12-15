@@ -90,14 +90,45 @@ p {
   bottom: 40px;
 }
 
+#bg_vid{
+  opacity: 30%;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-position: center;
+}
+
 .hero-desc {
   font-family: 'Arimo';
   font-size: 3rem;
   padding: 20px;
   display: inline-block;
-  transition: color 0.15s ease-in-out;
+  transition: color 0.35s ease-in-out;
   position: relative;
   bottom: 40px;
+}
+
+/* Media Queries for transitioning and responsive web design */
+
+@media (min-width: 1732px){
+  #bg_vid{
+    -moz-transform:scale(1);
+    -webkit-transform:scale(1);
+    -o-transform:scale(1);
+    -ms-transform:scale(1);
+    transform:scale(1);
+  }
+}
+
+@media (max-height: 652px){
+  #bg_vid{
+    -moz-transform:scale(3);
+    -webkit-transform:scale(3);
+    -o-transform:scale(3);
+    -ms-transform:scale(3);
+    transform:scale(3);
+  }
 }
 
 @media (max-width: 652px) {
@@ -126,7 +157,11 @@ p {
   color: #ff8931;
 }
 
-/* About Me Section */
+/* Sections */
+
+.text-center{
+  font-family: 'Arimo';
+}
 
 .ej-prof {
   width: 100%;
@@ -142,4 +177,92 @@ p {
 .sub_head {
   margin-top: 4%;
 }
+
+.contact_box{
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 10%;
+  padding-bottom: 4rem;
+  background-color: #2f2d31;
+  max-width: 35em;
+}
+
+#contact-info{
+  margin-top: 2rem;
+}
+
+.btn-primary{
+  font-family: inherit;
+  background-color: #ff8931;
+  border-color: #ff8931;
+  transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out, color 0.35s ease-in;
+  margin-top: 1rem;
+}
+
+.btn-primary:hover{
+  background-color: #fdf9f2;
+  border-color: #fdf9f2;
+  color: #2f2d31;
+}
+
+
+/* Contact Me section styling and color palettes for certain web browsers */
+
+input.cont-elem{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+textarea.cont-elem{
+  margin-top: 1rem;
+}
+
+input[type="text"],input[type="email"],textarea{
+  background-color: #6C6E6E;
+  border-style: none;
+  color:#f5f2f2;
+}
+
+input[type="text"]:focus,input[type="email"]:focus{
+  background-color: #6C6E6E;
+  border-style: none;
+  box-shadow: none;
+  color:#f5f2f2;
+}
+
+textarea:focus{
+ color: #2f2d31;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #f5f2f2;
+            opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #f5f2f2;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+            color: #f5f2f2;
+ }
+
+ .copyright_footer{
+  padding-bottom: 30px;
+}
+
+
+/* Styling for scrolling transitions */
+.reveal{
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: 1.2s all ease;
+}
+ /* Will be triggered when it is activated */
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
