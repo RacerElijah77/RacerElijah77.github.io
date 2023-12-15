@@ -157,7 +157,11 @@ p {
   color: #ff8931;
 }
 
-/* About Me Section */
+/* Sections */
+
+.text-center{
+  font-family: 'Arimo';
+}
 
 .ej-prof {
   width: 100%;
