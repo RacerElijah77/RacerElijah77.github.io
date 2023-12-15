@@ -109,6 +109,8 @@ p {
   bottom: 40px;
 }
 
+/* Media Queries for transitioning and responsive web design */
+
 @media (min-width: 1732px){
   #bg_vid{
     -moz-transform:scale(1);
@@ -199,6 +201,9 @@ p {
   color: #2f2d31;
 }
 
+
+/* Contact Me section styling and color palettes for certain web browsers */
+
 input.cont-elem{
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -240,6 +245,20 @@ textarea:focus{
 
  .copyright_footer{
   padding-bottom: 30px;
+}
+
+
+/* Styling for scrolling transitions */
+.reveal{
+   position: relative;
+   transform: translateY(150px);
+   opacity: 0;
+   transition: 1.2s all ease;
+}
+ /* Will be triggered when it is activated */
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
 
 

@@ -60,6 +60,9 @@
               <a class="nav-link" href="#about_seperator">About Me</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#projects_seperator">Research</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#projects_seperator">Projects</a>
             </li>
             <li class="nav-item">
@@ -124,7 +127,7 @@
     <!-- About Me -->
     <div id="about_seperator" style="position: relative; top: -75px"></div>
     <section id="about">
-      <div class="container mt-4 pt-4">
+      <div class="container reveal mt-4 pt-4">
         <h2 class="text-center">- About Me -</h2>
         <div class="row test mt-5">
           <div class="col-lg-4 col-md-4 col-sm-12 mx-auto">
@@ -149,10 +152,26 @@
       </div>
     </section>
 
+    <!-- Research Section -->
+    <div id="research_seperator" style="position: relative; top: -75px"></div>
+    <section id="research">
+      <div class="container reveal mt-4 pt-4">
+        <h2 class="text-center">- Research (revise later)-</h2>
+        <h5 class="fw-bolder fst-italic sub_head">
+          GreenTCNJ : January 2022 - December 2023
+        </h5>
+        <li class="bp1" style="list-style-position: inside; vertical-align: middle">
+          The site you are looking at right now! This is where it all started where my desire to learn more about web
+          development technologies grew. Made entirely using HTML5, CSS3, and Bootstrap 5.
+          <span style="text-decoration: underline">I am still working to improve this site!</span>
+        </li>
+      </div>
+    </section>
+
     <!-- Projects -->
     <div id="projects_seperator" style="position: relative; top: -75px"></div>
     <section id="projects">
-      <div class="container mt-4 pt-4">
+      <div class="container reveal mt-4 pt-4">
         <h2 class="text-center">- Projects -</h2>
         <h5 class="fw-bolder fst-italic sub_head">
           Personal Portfolio : June 2022 - present
@@ -186,7 +205,7 @@
     <!-- Work -->
     <div id="contacts_seperator" style="position: relative; top: -75px"></div>
     <section id="work-exp">
-      <div class="container mt-4 pt-4">
+      <div class="container reveal mt-4 pt-4">
         <h2 class="text-center">- Work Experience -</h2>
         <h5 class="fw-bolder fst-italic sub_head">Drop-In CS Tutor : September 2022 - present</h5>
         <li class="bp1" style="list-style-position: inside; vertical-align: middle">
@@ -207,7 +226,7 @@
 
     <!-- Contact Info -->
     <div id="contact_seperator" style="position: relative; top: -75px"></div>
-    <section id="contact-info">
+    <section id="contact-info" class = "reveal">
       <h2 class="text-center">- Contact -</h2>
       <div class="container mt-4 pt-4 text-center contact_box shadow">
         <h5 style="color: #fdf9f2;" class="text-center">Please feel free to contact me if you have any questions!</h5>
@@ -224,7 +243,7 @@
       </div>
     </section>
 
-    <!-- Footer for copyright text -->
+    <!-- Footer for copyright text (dynamic year changes) -->
     <div class = "copyright_footer text-center">
       <footer>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Elijah Gasataya. All Rights Reserved.</small></footer>
     </div>
@@ -240,5 +259,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- JQuery action for Navigation Bar scroll transition -->
     <script src="js/navbar_script.js"></script>
+    <!-- JQuery action for Navigation Bar scroll transition -->
+    <script src="js/scroll_transition_script.js"></script>
   </body>
+
 </html>
